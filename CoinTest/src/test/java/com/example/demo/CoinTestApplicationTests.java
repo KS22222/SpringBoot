@@ -54,7 +54,7 @@ class CoinTestApplicationTests {
                     .accept(MediaType.APPLICATION_JSON)
                     );
         	
-        	this.mockMvc.perform(MockMvcRequestBuilders.post("/api/update")
+        	this.mockMvc.perform(MockMvcRequestBuilders.put("/api/update")
                     .contentType(MediaType.APPLICATION_JSON)
                     .content("{\n" +
                             "  \"currency\": \"NTD\",\n" +
